@@ -1,0 +1,127 @@
+/* Estilos básicos */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Open Sans', sans-serif; /* Fonte definida como Open Sans */
+}
+
+body {
+  background: linear-gradient(to right, #e3f2fd, #bbdefb);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  color: #333;
+  margin: 0;
+}
+
+.weather-container {
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 20px;
+  max-width: 400px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  animation: fadeIn 0.5s ease;
+}
+
+h1 {
+  font-size: 1.8rem;
+  color: #1565c0;
+  margin-bottom: 15px;
+  font-weight: 600;
+}
+
+/* Estilo do campo de entrada */
+input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #90caf9;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  font-size: 1rem;
+  color: #333;
+  background-color: #e3f2fd;
+}
+
+input[type="text"]:focus {
+  border-color: #1565c0;
+  outline: none;
+}
+
+/* Botão de confirmação */
+button {
+  width: 100%;
+  padding: 10px;
+  font-size: 1rem;
+  font-weight: 600; /* Negrito para o botão */
+  color: #ffffff;
+  background-color: #1565c0;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #0d47a1;
+}
+
+.weather-info {
+  background-color: #e3f2fd;
+  border-radius: 8px;
+  padding: 15px;
+  margin-top: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  animation: slideIn 0.5s ease;
+}
+
+/* Estilos para Cidade, Temperatura e Clima */
+.weather-info p {
+  font-size: 1.2rem; /* Tamanho de fonte uniforme */
+  color: #1565c0; /* Cor azul para destacar */
+  font-weight: 700; /* Negrito para uniformidade */
+  margin: 8px 0;
+}
+
+#tendencia {
+  margin-top: 10px;
+  padding: 10px;
+  border-radius: 8px;
+  font-weight: 600;
+  background-color: #bbdefb;
+  color: #1e88e5;
+}
+
+.footer {
+  text-align: center;
+  padding: 10px;
+  font-size: 0.9rem;
+  color: #666;
+}
+
+/* Animação de entrada */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Animação de slide para as informações do clima */
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
