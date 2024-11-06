@@ -1,9 +1,7 @@
 const apiKey = 'cf4e9df67e3b26331fa5247d368360ca';
-// Exemplo de dados históricos com uma quantidade maior de dias e temperaturas para melhorar a previsão
 const dadosHistoricos = [18, 19, 20, 21, 22, 21, 23, 24, 26, 25, 27, 28, 27, 29, 30, 31, 30, 32, 33, 31];
-const dias = dadosHistoricos.map((_, i) => i + 1); // Array de dias correspondentes
+const dias = dadosHistoricos.map((_, i) => i + 1); 
 
-// Função para prever tendência de temperatura com mais dados históricos
 async function getWeather() {
     const city = document.getElementById('cityInput').value.trim();
     if (!city) {
@@ -18,7 +16,7 @@ async function getWeather() {
 
     try {
         const response = await fetch(apiUrl);
-        const data = await response.json(); // 'data' é definido aqui
+        const data = await response.json(); 
 
         if (data.main) {
             const temp = data.main.temp;

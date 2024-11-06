@@ -1,9 +1,8 @@
-/* Estilos básicos */
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: 'Open Sans', sans-serif; /* Fonte definida como Open Sans */
+  font-family: 'Open Sans', sans-serif; 
 }
 
 body {
@@ -34,7 +33,6 @@ h1 {
   font-weight: 600;
 }
 
-/* Estilo do campo de entrada */
 input[type="text"] {
   width: 100%;
   padding: 10px;
@@ -51,12 +49,12 @@ input[type="text"]:focus {
   outline: none;
 }
 
-/* Botão de confirmação */
+
 button {
   width: 100%;
   padding: 10px;
   font-size: 1rem;
-  font-weight: 600; /* Negrito para o botão */
+  font-weight: 600; 
   color: #ffffff;
   background-color: #1565c0;
   border: none;
@@ -78,11 +76,10 @@ button:hover {
   animation: slideIn 0.5s ease;
 }
 
-/* Estilos para Cidade, Temperatura e Clima */
 .weather-info p {
-  font-size: 1.2rem; /* Tamanho de fonte uniforme */
-  color: #1565c0; /* Cor azul para destacar */
-  font-weight: 700; /* Negrito para uniformidade */
+  font-size: 1.2rem; 
+  color: #1565c0; 
+  font-weight: 700; 
   margin: 8px 0;
 }
 
@@ -102,7 +99,6 @@ button:hover {
   color: #666;
 }
 
-/* Animação de entrada */
 @keyframes fadeIn {
   from {
     opacity: 0;
@@ -114,7 +110,6 @@ button:hover {
   }
 }
 
-/* Animação de slide para as informações do clima */
 @keyframes slideIn {
   from {
     opacity: 0;
